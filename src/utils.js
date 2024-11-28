@@ -11,5 +11,7 @@ export const handleError = (msg) => {
         position: 'top-right'
     })
 }
-export const APIUrl = process.env.REACT_APP_API_URL || 'https://expense-bknd-1.onrender.com';
+export const APIUrl = "https://expense-bknd-1.onrender.com"; // Render backend URL
+
+//export const APIUrl = process.env.REACT_APP_API_URL || 'https://expense-bknd-1.onrender.com';
 //export const APIUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080';
