@@ -1,17 +1,19 @@
 import { toast } from 'react-toastify';
 
+// Handle success notifications
 export const handleSuccess = (msg) => {
     toast.success(msg, {
-        position: 'top-right'
-    })
-}
+        position: 'top-right',
+    });
+};
 
+// Handle error notifications
 export const handleError = (msg) => {
     toast.error(msg, {
-        position: 'top-right'
-    })
-}
-export const APIUrl = "https://expense-bknd-1.onrender.com"; // Render backend URL
+        position: 'top-right',
+    });
+};
 
-//export const APIUrl = process.env.REACT_APP_API_URL || 'https://expense-bknd-1.onrender.com';
-//export const APIUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+// Use an environment variable for the API URL or default to localhost for development
+export const APIUrl =
+    process.env.REACT_APP_API_URL || "http://localhost:8080";
